@@ -1,21 +1,132 @@
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+}
+
 .footer {
-  padding: 20px 0;
+  padding: 40px 0;
+  background: #7A3145;
 }
-.footer-desc {
-  text-align: center;
+
+.footer-typography {
+  color:  #FBFBFB;
+  font-family: Inter Tight, Avenir, Helvetica, Arial, sans-serif;
+  font-style: normal;
 }
-.footer-link {
-  position: relative;
+
+.footer-logo {
+
 }
-.footer-link::before {
-  content: '';
-  position: absolute;
-  bottom: 6%;
-  left: 50%;
-  transform: translateX(-50%) skewX(-12deg);
-  z-index: -1;
-  width: 110%;
-  height: 24%;
-  background-color: #41d1ff;
-  transition: 200ms ease;
+
+.logo-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.footer-logo {
+  fill: #FBFBFB;
+}
+
+.footer-slogan {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.43;
+  padding: 0;
+  margin-top: 16px;
+}
+
+.footer-big-nav {
+  display: flex;
+  gap: 14px;
+  flex-direction: column;
+  margin-top: 40px;
+}
+
+.footer-big-nav-link {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: -0.015em;
+  text-transform: uppercase;
+}
+
+.footer-contacts {
+  display: flex;
+  gap: 14px;
+  flex-direction: column;
+  width: 65%;
+  margin-top: 40px;
+
+}
+
+.footer-contacts-item, .footer-contacts-item a {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.43; /* 142.857% */
+}
+
+.footer-nav {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: row;
+}
+
+.footer-nav-link, .footer-rights {
+  color: #D4BFC4;
+
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.43;
+}
+
+.footer-nav-item:not(:last-child) .footer-nav-link:after {
+  content: "/";
+  margin: 0 8px;
+}
+.footer-rights {
+  margin-top: 16px;
+}
+
+
+@media only screen and (min-width: 768px) {
+  .footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 0 212px;
+
+    padding: 0 32px;
+  }
+
+  .footer-about {
+    width: 37%;
+  }
+
+  .footer-slogan {
+    font-size: 16px;
+    line-height: 1.25;
+    margin-top: 24px;
+  }
+
+  .footer-big-nav {
+    margin-top: 0;
+  }
+
+  .footer-contacts {
+    padding: 0;
+    display: flex;
+    align-items: end;
+    width: 100%;
+    margin-top: 64px;
+  }
+
+  .footer-contacts-item {
+    width: 32%;
+  }
 }
