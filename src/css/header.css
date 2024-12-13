@@ -1,17 +1,26 @@
 .header {
-  padding: 20px 0;
+  margin: 20px 20px 0;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
 }
 .nav {
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 4px;
+
 }
 .nav-logo {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+  display: block;
 }
+
 .nav-list {
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: flex-end;
   gap: 40px;
@@ -41,4 +50,101 @@
 }
 .nav-link.active::after {
   background: #747bff;
+}
+.menu-button {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+
+}
+.shop{
+  display: none;
+}
+@media screen and (min-width: 768px){
+  .header{
+    margin: 32px 32px 0;  
+  }
+  .nav{
+    margin-right: 448px;
+  }
+  .shop{
+    display: none;
+  }
+  .nav-logo-text{
+    width:186.67px;
+    height:16.67px;
+  }
+}
+@media screen and (min-width: 1280px){
+  .menu-button{
+    display: none;
+  }
+  .nav-list{
+    display: flex;
+    align-items: center;
+  }
+  .header{
+    margin: 32px 0 ; 
+    padding: 0 100px; 
+
+  }
+  .header-info{
+    
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 8px;
+    border: 1px solid #fbfbfb;
+    border-radius: 12px;
+    padding: 12px;
+    width: 118px;
+    height: 44px;
+    justify-content: center;
+    align-items: center;    
+  }
+  .nav-list{
+    margin-left: 366px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 20px;
+  }
+  .nav-link{
+    
+    font-family: "Inter Tight", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.25;
+    text-align: center;
+    color: #fbfbfb;
+  }
+  .shop{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 10px;
+    border-radius: 30px;
+    padding: 16px 32px;
+    width: 157px;
+    height: 52px;
+    background: #7a3145;
+    border: 0px;
+    font-family: "Inter Tight", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.11111;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+    color: #fbfbfb;
+  }
+  .header-info{
+    padding: 4px;
+  }
+
 }
