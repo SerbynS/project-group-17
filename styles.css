@@ -1,7 +1,7 @@
 body {
     font-family: Inter Tight, sans-serif;
     color: #fbfbfb;
-    background: #576f35;
+    background-color: #576f35;
 }
 
 h1,
@@ -12,6 +12,7 @@ p {
 /* Common */
 
 .container {
+    min-width: 320px;
     max-width: 375px;
     /* padding: 0 16px; */
     margin: 0 auto;
@@ -32,13 +33,73 @@ p {
 
 /* hero */
 .hero {
+    background-color: rgba(20, 20, 20, 0.2), url("path_to_image");  
     padding: 100px 0px 0px 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: ;
+    background-color: #576f35;
+    margin: 0 auto;
+
+}
+
+@media only screen and (min-width: 768px) {
+    .container {
+        max-width: 768px;
+    }
+
+    .hero {
+        background-color: ;
+        padding: 120px 0px 0px 0px;
+
+    }
+
+    .hero-title {
+        width: 704px;
+        font-size: 76px;
+    }
+
+    .hero-text {
+        font-size: 16px;
+        line-height: 1.25;
+        /* margin-bottom: 40px; */
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .container {
+        max-width: 1280px;
+        /* padding: 0 15px; */
+    }
+
+    .hero {
+        background-color: ;
+        background-position: ;
+        padding: 232px 0px 0px 0px;
+    }
+
+    .hero-title {
+        width: 502px;
+    }
 }
 
 .hero-container {}
 
-.container {}
+.hero-title {
+    width: 335px;
+    font-weight: 600;
+    font-size: 52px;
+    line-height: 1.0; 
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+    color: #fbfbfb;
+    margin-bottom: 20px;
+}
 
-.hero-title {}
-
-.hero-text {}
+.hero-text {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.43; 
+    color: #fbfbfb;
+    /* margin-bottom: 40px; */
+}
