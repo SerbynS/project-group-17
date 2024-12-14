@@ -29,7 +29,6 @@ ol {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-family: 'Inter Tight', sans-serif;
 }
 
 /* Desktop */
@@ -66,7 +65,7 @@ ol {
 /* Mobile */
 
 .how-it-works-order-container {
-  background: #576f35;
+  background-color: #576f35;
   padding: 80px 20px;
   width: 100%;
 }
