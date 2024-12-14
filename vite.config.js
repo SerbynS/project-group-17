@@ -10,7 +10,7 @@ export default defineConfig(({ command }) => {
       [command === 'serve' ? 'global' : '_global']: {},
     },
     server: {
-      host: '0.0.0.0',
+      host: '0.0.0.0'
     },
     root: 'src',
     build: {
