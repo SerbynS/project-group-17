@@ -18,7 +18,7 @@
 
 }
 
-.logo-wrapper {
+.logo-link{
   display: flex;
   align-items: center;
   gap: 4px;
@@ -181,21 +181,24 @@
 
   }
 
-  .footer-elements-wrapper {
+  .footer-big-nav-wrapper  {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     gap: 121px;
   }
+
 
   .footer-big-nav {
 
   }
 
+  .footer-nav-item:not(:last-child) .footer-nav-link:after {
+    margin: 0 12px;
+  }
+
   .footer-contacts {
     margin: 0;
-  }
-  .footer-nav, .footer-rights {
-    width: 100%;
   }
 
 }
