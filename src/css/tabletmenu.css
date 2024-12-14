@@ -25,7 +25,7 @@
         background-color:  #576f35;
         top: 0;
         right: 0;
-        padding: 360px 97px 48px 97px;
+        padding: 72px 97px 48px 97px;
         
     }
     .tablet-menu-list{
@@ -34,27 +34,39 @@
         gap: 24px ;
         justify-content: center;
         align-items: center;
+        margin-top: auto;
         margin-bottom: auto;
         
         }
 
     .tablet-menu-items{
+        display: flex;
+      
         border-radius: 12px;
-        padding: 12px 0;
+        padding: 0;
         text-align: center;
-        width: 123px;
+        min-width: 123px;
         height: 44px;
         border: 1px solid #fbfbfb;
         
     }    
+    .tablet-menu-items:focus-within, .tablet-menu-items:hover{
+        background-color:#fbfbfb;
+         }
+    .tab-menu-links:focus, .tab-menu-links:hover{color:#7a3145;
+    outline: none;}
     .tab-menu-links{ 
-        display: block;
+        display:block;
+        width: 100%;
+        height: 100%;
         font-family: "Inter Tight", sans-serif;
         font-weight: 500;
         font-size: 16px;
         line-height: 125%;
-        
         color: #fbfbfb;
+        text-decoration: none; 
+        line-height: 44px;
+        box-sizing: border-box;
         }
     .submit-button{
     display: block;
@@ -72,15 +84,21 @@
     border: none;
     text-align: center;
     cursor: pointer;
-    
-    
     }
-    .close-button{position:absolute;
+    .submit-button:focus{background-color: #fbfbfb;
+    color: #7a3145;}
+
+    .close-button{
+        position:absolute;
         top: 32px;
         right: 32px;
         width: 40px;
         height: 40px;
-        
+        border: none;
+        background-color: transparent;
+    }
+    .close-btn{
+        fill:#fbfbfb;
     }
 
   }
