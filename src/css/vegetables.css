@@ -4,7 +4,6 @@ padding-top: 80px;
 padding-bottom: 80px;
 }
 .vegetables-container {
- width: 320px;
 display: flex;
 flex-direction: column;
 justify-content: center;
@@ -40,6 +39,9 @@ border-radius: 40px;
 padding: 32px 24px;
 background: #fbfbfb;
 }
+.vegetables-foto {
+margin-bottom: 12px;
+}
 .name-vegetables {
 font-family: "Inter Tight", sans-serif;
 font-weight: 600;
@@ -62,7 +64,6 @@ padding-top: 100px;
 padding-bottom: 100px;
 }
 .vegetables-container {
-width: 768px;
 padding: 0 32px;
 }
 .vegetables-title {
@@ -90,6 +91,7 @@ flex-direction: row;
 padding: 32px 30px;
 width: calc((100% - 24px) / 2);
 }
+
 .name-vegetables {
 font-size: 32px;
 }
@@ -104,7 +106,6 @@ padding-top: 100px;
 padding-bottom: 100px;
 }
 .vegetables-container {
-width: 1280px;
 padding: 0 100px;
 }
 .vegetables-cards {
@@ -113,6 +114,9 @@ width: 1080px;
 .vegetables-lists {
  padding: 32px;
 width: calc(33.33% - 16px);
+}
+.vegetables-foto {
+margin-bottom: 8px;
 }
 }
 
