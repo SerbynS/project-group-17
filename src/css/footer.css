@@ -55,7 +55,7 @@
   display: flex;
   gap: 14px;
   flex-direction: column;
-  width: 65%;
+  max-width: 215px;
   margin-top: 40px;
 
 }
@@ -63,7 +63,7 @@
 .footer-contacts-item, .footer-contacts-item a {
   font-size: 14px;
   font-weight: 700;
-  line-height: 1.43; /* 142.857% */
+  line-height: 1.43;
 }
 
 .footer-nav {
@@ -103,7 +103,7 @@
   }
 
   .footer-about {
-    width: 37%;
+    max-width: 265px;
   }
 
   .footer-slogan {
