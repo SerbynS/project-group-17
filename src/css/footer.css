@@ -18,7 +18,7 @@
 
 }
 
-.logo-wrapper {
+.logo-link{
   display: flex;
   align-items: center;
   gap: 4px;
@@ -121,6 +121,7 @@
   }
 
   .footer-big-nav-wrapper {
+    margin: 0;
     display: flex;
     flex-direction: column;
   }
@@ -139,6 +140,8 @@
   }
 
   .footer-nav-wrapper {
+    margin-top: 100px;
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -155,6 +158,9 @@
 
   }
 
+  .footer-rights {
+    margin: 0;
+  }
   .footer-nav-link, .footer-rights {
     font-size: 16px;
     font-weight: 500;
