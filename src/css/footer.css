@@ -167,3 +167,42 @@
     line-height: 1.25;
   }
 }
+
+
+@media only screen and (min-width: 1280px) {
+  .footer {
+    padding: 52px 0;
+  }
+
+  .footer-about {
+    width: 25%;
+  }
+
+  .footer-container {
+
+  }
+
+  .footer-big-nav-wrapper  {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 121px;
+  }
+
+  .footer-nav-wrapper {
+    margin-top: 124px;
+  }
+
+  .footer-big-nav {
+
+  }
+
+  .footer-nav-item:not(:last-child) .footer-nav-link:after {
+    margin: 0 12px;
+  }
+
+  .footer-contacts {
+    margin: 0;
+  }
+
+}
