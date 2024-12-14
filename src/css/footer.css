@@ -120,7 +120,7 @@
     margin-top: 24px;
   }
 
-  .footer-elements-wrapper {
+  .footer-big-nav-wrapper {
     display: flex;
     flex-direction: column;
   }
@@ -138,6 +138,11 @@
     gap: 24px;
   }
 
+  .footer-nav-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 
   .footer-contacts-item, .footer-contacts-item a {
     max-width: 215px;
@@ -147,7 +152,7 @@
   }
 
   .footer-nav, .footer-rights {
-    margin-top: 100px;
+
   }
 
   .footer-nav-link, .footer-rights {
