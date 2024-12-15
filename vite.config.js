@@ -9,6 +9,9 @@ export default defineConfig(({ command }) => {
     define: {
       [command === 'serve' ? 'global' : '_global']: {},
     },
+    server: {
+      host: '0.0.0.0'
+    },
     root: 'src',
     build: {
       sourcemap: true,
