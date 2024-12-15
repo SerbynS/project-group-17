@@ -1,13 +1,16 @@
 .header {
-  margin: 20px 20px 0;
   position: absolute;
-  top: 40px;
+  top: 40px; /* Відступ зверху */
+  left: 50%; /* Центруємо по горизонталі */
+  transform: translateX(-50%);
+  width: 100%; /* На всю ширину */
+  z-index: 10; /* Поверх іншого контенту */
+
 }
 .header-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-
 }
 .nav {
   display: flex;
@@ -19,6 +22,7 @@
 }
 .nav-logo {
   display: block;
+  margin: 20px 0;
 }
 
 .nav-list {
@@ -66,9 +70,7 @@
   display: none;
 }
 @media screen and (min-width: 768px){
-  .header{
-    margin: 32px 32px 0;  
-  }
+
   .nav{
     margin-right: 448px;
   }
@@ -84,15 +86,19 @@
   .menu-button{
     display: none;
   }
+ 
   .nav-list{
     display: flex;
     align-items: center;
+    margin-left: 358px;
   }
   .header{
-    margin: 32px 0 ; 
-    padding: 0 100px; 
-    
-
+    width: 100%;
+    padding:0 84px; 
+  }
+  .header-container {
+    display: flex;
+    align-items: center;
   }
   .header-info{
     
@@ -110,12 +116,13 @@
     align-items: center;    
   }
   .nav-list{
-    margin-left: 366px;
+    
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: row;
     gap: 8px;
+    margin-right: 20px;
   }
   .nav-link{
     
@@ -131,7 +138,6 @@
     align-items: center;
     justify-content: center;
     flex-direction: row;
-    gap: 10px;
     border-radius: 30px;
     padding: 16px 0;
     width: 157px;
