@@ -1,9 +1,7 @@
 .header {
-  padding: 0 4px;
   position: absolute;
-  top: 40px; /* Відступ зверху */
-  left: 50%; /* Центруємо по горизонталі */
-  transform: translateX(-50%);
+  top: 20px; /* Відступ зверху */
+  left: 0; /* Центруємо по горизонталі */
   width: 100%; /* На всю ширину */
   z-index: 10; /* Поверх іншого контенту */
 
@@ -18,19 +16,20 @@
   align-items: center;
   justify-content: flex-start;
   flex-direction: row;
-  gap: 4px;
-
 }
 .nav-logo {
-  display: block;
-  margin: 20px 0;
+  gap: 8.89px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
 }
 
 .nav-list {
   display: none;
   align-items: center;
   justify-content: flex-end;
-  margin-right:20px;
+  margin-right: 20px;
 }
 .nav-link {
   position: relative;
@@ -62,7 +61,6 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  padding: 0;
   border: none;
   background-color: transparent;
 
@@ -71,9 +69,9 @@
   display: none;
 }
 @media screen and (min-width: 768px){
-
-  .nav{
-    margin-right: 448px;
+  .header{
+    position:absolute;
+    top:32px;
   }
   .shop{
     display: none;
@@ -87,19 +85,20 @@
   .menu-button{
     display: none;
   }
- 
+  .header{
+    position:absolute;
+    top: 32px;
+  }
   .nav-list{
     display: flex;
     align-items: center;
     margin-left: 358px;
   }
-  .header{
-    width: 100%;
-    padding:0 84px; 
-  }
+
   .header-container {
     display: flex;
     align-items: center;
+    justify-content: center;
   }
   .header-info{
     
@@ -107,23 +106,19 @@
     align-items: flex-start;
     justify-content: flex-start;
     flex-direction: row;
-    gap: 0px;
     border: 1px solid #fbfbfb;
     border-radius: 12px;
-    padding: 12px;
     width: 118px;
     height: 44px;
     justify-content: center;
     align-items: center;    
   }
   .nav-list{
-    
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: row;
     gap: 8px;
-    margin-right: 20px;
   }
   .nav-link{
     
@@ -140,7 +135,6 @@
     justify-content: center;
     flex-direction: row;
     border-radius: 30px;
-    padding: 16px 0;
     width: 157px;
     height: 52px;
     background-color: #7a3145;
@@ -165,5 +159,4 @@
   .header-info{
     padding: 4px;
   }
-
 }
