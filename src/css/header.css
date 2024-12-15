@@ -1,4 +1,5 @@
 .header {
+  padding: 0 4px;
   position: absolute;
   top: 40px; /* Відступ зверху */
   left: 50%; /* Центруємо по горизонталі */
