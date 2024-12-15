@@ -1,21 +1,21 @@
-
-body {
+/* body {
   margin: 0;
   font-family: Arial, sans-serif;
   overflow: auto; 
-}
+} */
 .mobile-menu {
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
   max-width: 375px;
-  background-color:#576F35; 
+  background-color: #576f35;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start; 
+  justify-content: flex-start;
   align-items: center;
   z-index: 1000;
+  display: none;
 }
 
 .menu-overlay {
@@ -23,29 +23,27 @@ body {
   text-align: center;
   padding-top: 296px;
   padding-bottom: 52px;
- 
 }
 
-
-.close-btn { 
+.close-btn {
   z-index: 1000;
   position: absolute;
-  top: 20px; 
-  right: 20px; 
+  top: 20px;
+  right: 20px;
   background: none;
   border: none;
   cursor: pointer;
-  fill: #ffffff; 
+  fill: #ffffff;
   display: flex;
-  border-color: #576F35;
+  border-color: #576f35;
 }
 
 .menu {
   display: flex;
   flex-direction: column;
-  gap: 24px; 
+  gap: 24px;
   width: 100%;
-  align-items: center; 
+  align-items: center;
 }
 
 .menu-item {
@@ -53,44 +51,41 @@ body {
   font-size: 14px;
   font-weight: 500;
   font-family: Inter Tight;
-  color: #ffffff; 
+  color: #ffffff;
   border: 1px solid #ffffff;
-  width: 100%; 
-  max-width: 118px; 
-  line-height: 44px; 
-  border-radius: 12px; 
+  width: 100%;
+  max-width: 118px;
+  line-height: 44px;
+  border-radius: 12px;
   text-align: center;
   transition: all 0.3s ease-in-out;
 }
 
 .menu-item:hover {
   background-color: #ffffff;
-  color: #7A3145;
-
+  color: #7a3145;
 }
-
 
 .shop-now-btn {
-    display:inline-block;
-    margin: 0 auto;
-    margin-top: 232px;
-    text-decoration: none;
-    color: #ffffff;
-    background: #7A3145;
-    padding: 16px 41px;
-    max-width: 175px;
-    width: 100vw;
-    border-radius: 30px;
-   font-family: Inter Tight;
-   font-size: 18px;
-   font-weight: 600;
-   letter-spacing: -0.015em;
+  display: inline-block;
+  margin: 0 auto;
+  margin-top: 232px;
+  text-decoration: none;
+  color: #ffffff;
+  background: #7a3145;
+  padding: 16px 41px;
+  max-width: 175px;
+  width: 100vw;
+  border-radius: 30px;
+  font-family: Inter Tight;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: -0.015em;
   text-align: center;
-   transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
-  
-  
+
 .shop-now-btn:hover {
   background-color: #ffffff;
-  color: #7A3145;
+  color: #7a3145;
 }
