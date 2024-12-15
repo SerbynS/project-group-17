@@ -93,6 +93,7 @@
         height: 92px;
         resize: none;
         margin-bottom: 20px;
+        border-radius: 15px;
     }
 
     .text-input::placeholder {
@@ -137,6 +138,7 @@
     }
 
     .order-card-img {
+        width: 100%;
         border-radius: 15px;
         margin-bottom: 20px;
     }
