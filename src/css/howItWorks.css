@@ -210,26 +210,18 @@ ol {
   align-items: center;
   gap: 24px;
   border-radius: 15px;
-  padding: 12px 27px 12px 24px;
+  padding: 12px 24px 12px 24px;
   background-color: #fbfbfb;
   width: 100%;
 }
 
-/* Tablet */
+/* Tablet & Desktop */
 
 @media only screen and (min-width: 768px) {
   .how-it-works-order-list-item {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.25;
-    padding: 18px 15px 18px 24px;
-  }
-}
-
-/* Desktop */
-
-@media only screen and (min-width: 1280px) {
-  .how-it-works-order-list-item {
     padding: 12px 15px 12px 24px;
   }
 }
