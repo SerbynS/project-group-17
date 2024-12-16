@@ -1,0 +1,81 @@
+.container-adv {
+    padding: 0 20px;
+    height: 312px;
+    gap: 10px;
+       }
+.advertisement {
+    padding: 80px 0;
+}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+.advertisement-text-title {
+    font-family: "Inter Tight", sans-serif;
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 1.08;
+        letter-spacing: -0.01em;
+        text-transform: uppercase;
+        color: #141414;
+        
+}
+.block-green {
+     display: block;
+     border-radius: 12px;
+     max-width: 335px;
+     max-height: 102px;
+     background-color: #576f35;
+     color: #fbfbfb;
+}
+
+
+@media only screen and (min-width: 768px) {
+.container-adv {
+    padding: 0 32px;
+    height: 288px;
+   }
+.advertisement {
+    padding: 100px 0;
+    display: flex;
+    align-items: start;
+}
+.advertisement-text-title {
+   font-size: 64px;
+   line-height: 1;
+    }
+.block-green {
+    max-width: 675px;
+    height: 86px;
+    padding-top: 20px;
+}
+}
+
+@media only screen and (min-width: 1280px) {
+.container-adv {
+        height: 228px;
+        display: flex;
+             }
+
+ .block-green {
+     max-width: 808px;
+     max-height: 84px;
+     display: inline;
+     padding-top: 4px;
+     padding-left: 16px;
+ }
+.advertisement-text-title {
+    text-align: left;
+    font-size: 76px;
+    max-width: 1054px;
+    max-height: 228px;
+}
+}
