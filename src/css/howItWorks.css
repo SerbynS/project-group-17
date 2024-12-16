@@ -170,7 +170,10 @@ ol {
   font-size: 14px;
   line-height: 1.42857;
   color: #fbfbfb;
-  padding-bottom: 40px;
+}
+
+.how-it-works-order-wrapper {
+  margin-bottom: 40px;
 }
 
 /* Tablet */
@@ -179,15 +182,17 @@ ol {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.25;
-    padding-bottom: 52px;
+  }
+  .how-it-works-order-wrapper {
+    margin-bottom: 52px;
   }
 }
 
 /* Desktop */
 
 @media only screen and (min-width: 1280px) {
-  .how-it-works-order-text {
-    padding-bottom: 104px;
+  .how-it-works-order-wrapper {
+    margin-bottom: 104px;
   }
 }
 
@@ -249,4 +254,14 @@ ol {
   letter-spacing: -0.01em;
   text-transform: uppercase;
   color: #fbfbfb;
+}
+
+@media only screen and (min-width: 768px) {
+  .how-it-works-order-list-container {
+    gap: 24px;
+  }
+}
+
+.how-it-works-order-list-item:nth-child(2) {
+  padding-right: 59px;
 }

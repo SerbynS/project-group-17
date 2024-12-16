@@ -1,6 +1,5 @@
-
 @media only screen and (min-width: 768px) {
-  .container {
+  .tab-menu-overlay .container {
     max-width: 768px;
   }
   .tab-menu-overlay {
@@ -14,9 +13,9 @@
     height: 100%;
     z-index: 999;
   }
- .tab-menu-overlay .is-open{
-    transform:translateX(0%) ;
- }
+  .tab-menu-overlay .is-open {
+    transform: translateX(0%);
+  }
   .tablet-menu {
     display: flex;
     flex-direction: column;
@@ -98,27 +97,26 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
-   
+
     top: 32px;
     right: 32px;
     border: none;
     background-color: transparent;
-}
-.close-btn {
-    
+  }
+  .close-btn {
     width: 40px;
     height: 40px;
     stroke: #fbfbfb;
   }
 }
 @media only screen and (max-width: 768px) {
-    .tab-menu-overlay {display: none;
-     
-    }
+  .tab-menu-overlay {
+    display: none;
   }
-  
+}
+
 @media only screen and (min-width: 1280px) {
-  .tab-menu-overlay {display: none;
-   
+  .tab-menu-overlay {
+    display: none;
   }
 }
