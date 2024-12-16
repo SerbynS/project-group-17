@@ -1,0 +1,252 @@
+ol {
+  list-style-type: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.how-it-works-container .container:has(.how-it-works-title-container),
+.how-it-works-container .container:has(.how-it-works-order-container) {
+  padding: 0;
+}
+
+/* Mobile & Tablet*/
+
+.how-it-works-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+    180deg,
+    rgba(122, 49, 69, 1) 44.05%,
+    rgba(87, 111, 53, 1) 44%
+  );
+}
+
+/* Desktop */
+@media only screen and (min-width: 1280px) {
+  .how-it-works-container .container {
+    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.how-it-works-title-container {
+  padding: 40px 20px;
+  background-color: #7a3145;
+}
+
+/* Tablet */
+
+@media only screen and (min-width: 768px) {
+  .how-it-works-title-container {
+    padding: 100px 64px;
+  }
+  .how-it-works-container {
+    background: linear-gradient(
+      180deg,
+      rgba(122, 49, 69, 1) 53.27%,
+      rgba(87, 111, 53, 1) 46%
+    );
+  }
+}
+
+/* Desktop */
+
+@media only screen and (min-width: 1280px) {
+  .how-it-works-title-container {
+    padding: 100px;
+    height: 100%;
+  }
+  .how-it-works-container {
+    background: linear-gradient(
+      90deg,
+      rgba(122, 49, 69, 1) 49.22%,
+      rgba(87, 111, 53, 1) 41.78%
+    );
+  }
+}
+
+/* Mobile */
+
+.how-it-works-order-container {
+  background-color: #576f35;
+  padding: 80px 20px;
+  width: 100%;
+}
+
+/* Tablet */
+
+@media only screen and (min-width: 768px) {
+  .how-it-works-order-container {
+    padding: 100px 164px;
+  }
+}
+
+/* Desktop */
+
+@media only screen and (min-width: 1280px) {
+  .how-it-works-order-container {
+    padding: 100px;
+    height: 100%;
+  }
+}
+
+.how-it-works-image {
+  border-radius: 30px;
+}
+
+/* Mobile */
+
+@media only screen and (min-width: 375px) and (max-width: 767px) {
+  .how-it-works-image {
+    width: 335px;
+    height: 452px;
+  }
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) {
+  .how-it-works-image {
+    width: 640px;
+    height: 640px;
+  }
+}
+
+/* Desktop */
+@media only screen and (min-width: 1280px) {
+  .how-it-works-image {
+    width: 440px;
+    height: 560px;
+  }
+}
+
+.how-it-works-order-wrapper {
+  max-width: 440px;
+}
+
+/* Mobile */
+
+.how-it-works-order-title {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 1;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: #fbfbfb;
+  margin-bottom: 20px;
+}
+
+/* Tablet & Desktop */
+
+@media only screen and (min-width: 768px) {
+  .how-it-works-order-title {
+    font-size: 32px;
+    margin-bottom: 24px;
+  }
+}
+
+.order-title-styling {
+  color: #d4bfc4;
+}
+
+/* Mobile */
+.how-it-works-order-text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.42857;
+  color: #fbfbfb;
+  padding-bottom: 40px;
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) {
+  .how-it-works-order-text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.25;
+    padding-bottom: 52px;
+  }
+}
+
+/* Desktop */
+
+@media only screen and (min-width: 1280px) {
+  .how-it-works-order-text {
+    padding-bottom: 104px;
+  }
+}
+
+.how-it-works-order-list-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  counter-reset: order-list 0;
+}
+
+/* Mobile */
+
+.how-it-works-order-list-item {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.42857;
+  color: #858585;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  border-radius: 15px;
+  padding: 12px 24px 12px 24px;
+  background-color: #fbfbfb;
+  width: 100%;
+}
+
+/* Tablet & Desktop */
+
+@media only screen and (min-width: 768px) {
+  .how-it-works-order-list-item {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.25;
+    padding: 12px 15px 12px 24px;
+  }
+}
+
+.order-list-item-styling {
+  font-weight: 700;
+  color: #141414;
+}
+
+.how-it-works-order-list-item::before {
+  counter-increment: order-list;
+  content: counter(order-list);
+  width: 52px;
+  height: 52px;
+  flex-shrink: 0;
+  display: block;
+  text-align: center;
+  align-content: center;
+  background-color: #7a3145;
+  border: 5px solid #d4bfc4;
+  border-radius: 100%;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.11111;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: #fbfbfb;
+}
