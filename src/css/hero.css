@@ -1,0 +1,125 @@
+/* hero */
+
+.hero {
+  padding-top: 100px;
+  height: 840px;
+  background-color: #576f35;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hero-container {
+  padding: 0 20px;
+  margin-bottom: 40px;
+}
+
+.hero-title {
+  font-weight: 600;
+  font-size: 52px;
+  line-height: 1;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: #fbfbfb;
+  margin-bottom: 20px;
+}
+
+.hero-text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.43;
+  color: #fbfbfb;
+}
+
+.hero-image {
+  background-image: linear-gradient(
+      rgba(20, 20, 20, 0.2),
+      rgba(20, 20, 20, 0.2)
+    ),
+    url('../img/mobile/hero_mob@1x.jpg');
+  height: 372px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+@media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero-image {
+    background-image: linear-gradient(
+        rgba(20, 20, 20, 0.2),
+        rgba(20, 20, 20, 0.2)
+      ),
+      url('../img/mobile/hero_mob@2x.jpg');
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .hero {
+    height: 1020px;
+    padding-top: 120px;
+  }
+
+  .hero-container {
+    margin-bottom: 52px;
+  }
+
+  .hero-image {
+    background-image: linear-gradient(
+        rgba(20, 20, 20, 0.2),
+        rgba(20, 20, 20, 0.2)
+      ),
+      url('../img/table/hero_tab@1x.jpg');
+    height: 536px;
+  }
+
+  .hero-title {
+    font-size: 76px;
+  }
+
+  .hero-text {
+    max-width: 603px;
+    font-size: 16px;
+    line-height: 1.25;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .hero {
+    height: 796px;
+    padding-top: 0;
+    flex-direction: row;
+  }
+
+  .hero-image {
+    display: flex;
+    flex-direction: row;
+    background-image: linear-gradient(
+        rgba(20, 20, 20, 0.2),
+        rgba(20, 20, 20, 0.2)
+      ),
+      url('../img/desktop/hero_desc@1x.jpg');
+    height: 796px;
+    width: 640px;
+    margin-right: auto;
+  }
+
+  .hero-container {
+    width: 640px;
+    padding-right: 38px;
+    margin-right: 0;
+    margin-left: auto;
+    padding-top: 232px;
+    margin-bottom: 0;
+    padding-left: 100px;
+  }
+
+  .hero-title {
+    width: 502px;
+    margin-bottom: 128px;
+  }
+
+  .hero-text {
+    max-width: 472px;
+  }
+}
