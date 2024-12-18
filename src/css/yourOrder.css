@@ -174,10 +174,6 @@
   .inner-links-item{
     transition: text-decoration 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
-
-  .inner-links-item:hover{
-    text-decoration: underline;
-  }
 }
 
 @media (min-width: 375px) and (max-width: 767px) {
