@@ -39,10 +39,11 @@
   }
 
   .menu-overlay {
-    gap: 24px;
+    
     display: flex;
     flex-direction: column;
-
+   justify-content: space-between;
+   height: 100vh;
   }
 
   .close-btn {
@@ -64,6 +65,9 @@
     gap: 24px;
     width: 100%;
     align-items: center;
+    margin-top: 296px;
+   
+
   }
 
   .mobile-menu-items{
@@ -103,7 +107,8 @@
     transition: all 0.3s ease-in-out;
     border: none;
     text-transform: uppercase;
-    margin-top: 232px;
+    margin-bottom: 52px;
+    margin-top: 24px;
    
   }
 
