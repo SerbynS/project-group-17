@@ -101,7 +101,9 @@ border: 2px solid #576f35;
 transform: scale(1.2);
 box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
 }
-
+.vegetables-lists:hover {
+box-shadow: 3px 3px 5px black;
+}
 .name-vegetables {
 font-size: 32px;
 }
@@ -123,16 +125,13 @@ width: 1080px;
 }
 .vegetables-lists {
  padding: 32px;
-width: calc(33.33% - 16px);
-transition: 0.5s ease;
-cursor: pointer;
-border: 2px solid  #576f35;;
-box-shadow: 0px 10px 20px rgba(60, 179, 113, 0.3);
+ width: calc(33.33% - 16px); 
+
 }
 .vegetables-lists:hover {
-transform: scale(1.2);
-box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+box-shadow: 3px 3px 5px black;
 }
+
 .vegetables-foto {
 margin-bottom: 8px;
 }
