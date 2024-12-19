@@ -65,7 +65,7 @@
     gap: 24px;
     width: 100%;
     align-items: center;
-    margin-top: 296px;
+    padding: 296px 0 24px;
    
 
   }
@@ -108,7 +108,7 @@
     border: none;
     text-transform: uppercase;
     margin-bottom: 52px;
-    margin-top: 24px;
+    
    
   }
 
