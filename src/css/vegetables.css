@@ -92,7 +92,9 @@ flex-direction: row;
 padding: 32px 30px;
 width: calc((100% - 24px) / 2);
 }
-
+.vegetables-lists:hover {
+box-shadow: 3px 3px 5px black;
+}
 .name-vegetables {
 font-size: 32px;
 }
@@ -114,8 +116,12 @@ width: 1080px;
 }
 .vegetables-lists {
  padding: 32px;
-width: calc(33.33% - 16px);
+width: calc(33.33% - 16px); 
 }
+.vegetables-lists:hover {
+box-shadow: 3px 3px 5px black;
+}
+
 .vegetables-foto {
 margin-bottom: 8px;
 }
