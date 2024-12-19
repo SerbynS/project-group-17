@@ -88,6 +88,7 @@
     font-size: 14px;
     line-height: 20px;
     color: #141414;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .user-comment {
@@ -168,6 +169,10 @@
     color: #fbfbfb;
     cursor: pointer;
     flex-wrap: wrap;
+  }
+
+  .inner-links-item{
+    transition: text-decoration 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 
@@ -316,6 +321,10 @@
     width: 100%;
     height: 50px;
     padding: 16px 14px;
+  }
+
+  .text-input:hover{
+    border-color: #7A3145;
   }
 
   .user-comment {
