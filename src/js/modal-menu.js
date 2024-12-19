@@ -8,11 +8,18 @@
 
     // Додати атрибут data-modal на бекдроп модалки
     modal: document.querySelectorAll('[data-modal-menu]'),
+
+    menuBtnTable: document.querySelectorAll('[data-btn-table]'),
   };
 
   refs.openModalBtn.addEventListener('click', toggleModal);
   refs.closeMobileMenuBtn.addEventListener('click', toggleModal);
   refs.closeTableMenuBtn.addEventListener('click', toggleModal);
+
+  for (const btn of refs.menuBtnTable) {
+    btn.addEventListener('click', closeMenuBtn);
+    console.log('btn');
+  }
 
   function toggleModal() {
     if (window.matchMedia('(max-width: 767px)').matches) {
@@ -20,5 +27,9 @@
     } else if (window.matchMedia('(min-width: 768px)').matches) {
       refs.modal[0].classList.toggle('is-open');
     }
+  }
+
+  function closeMenuBtn() {
+    refs.modal[0].classList.remove('is-open');
   }
 })();
