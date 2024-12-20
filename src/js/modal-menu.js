@@ -10,6 +10,7 @@
     modal: document.querySelectorAll('[data-modal-menu]'),
 
     menuBtnTable: document.querySelectorAll('[data-btn-table]'),
+    menuBtnMobile: document.querySelectorAll('[data-btn-mobile]'),
   };
 
   refs.openModalBtn.addEventListener('click', toggleModal);
@@ -18,9 +19,13 @@
 
   for (const btn of refs.menuBtnTable) {
     btn.addEventListener('click', closeMenuBtn);
-    console.log('btn');
+    // console.log('btn');
   }
 
+  for (const btn of refs.menuBtnMobile) {
+    btn.addEventListener('click', closeMenuBtnMobile);
+    //  console.log('btn');
+  }
   function toggleModal() {
     if (window.matchMedia('(max-width: 767px)').matches) {
       refs.modal[1].classList.toggle('is-open');
@@ -31,5 +36,9 @@
 
   function closeMenuBtn() {
     refs.modal[0].classList.remove('is-open');
+  }
+
+  function closeMenuBtnMobile() {
+    refs.modal[1].classList.remove('is-open');
   }
 })();
