@@ -37,7 +37,6 @@
   function closeMenuBtn() {
     refs.modal[0].classList.remove('is-open');
   }
-
   function closeMenuBtnMobile() {
     refs.modal[1].classList.remove('is-open');
   }
