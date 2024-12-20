@@ -8,7 +8,7 @@
 
   .title-wrapper {
     width: 100%;
-    min-height: 192px;
+    /* min-height: 192px; */
     margin-bottom: 40px;
   }
 
@@ -42,14 +42,14 @@
   }
 
   .order-card {
-    min-height: 396px;
+    /* min-height: 396px; */
     background-color: #fbfbfb;
     border-radius: 30px;
     padding: 40px 20px;
   }
 
   .card-left-inner {
-    min-height: 488px;
+    /* min-height: 488px; */
   }
 
   .left-inner-desc {
@@ -71,7 +71,7 @@
   }
 
   .order-form {
-    min-height: 292px;
+    /* min-height: 292px; */
     line-height: 0;
   }
 
@@ -146,7 +146,7 @@
   }
 
   .order-card-inner {
-    min-height: 56px;
+    /* min-height: 56px; */
   }
 
   .inner-desc {
@@ -171,7 +171,7 @@
     flex-wrap: wrap;
   }
 
-  .inner-links-item{
+  .inner-links-item {
     transition: text-decoration 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
@@ -229,7 +229,7 @@
 
   .card-left-inner {
     width: 440px;
-    min-height: 488px;
+    /* min-height: 488px; */
   }
 
   .left-inner-desc {
@@ -296,13 +296,13 @@
 
   .order-card {
     width: 524px;
-    min-height: 592px;
+    /* min-height: 592px; */
     padding: 52px 48px;
   }
 
   .card-left-inner {
     width: 428px;
-    min-height: 488px;
+    /* min-height: 488px; */
   }
 
   .left-inner-desc {
@@ -314,7 +314,7 @@
 
   .order-form {
     width: 100%;
-    min-height: 308px;
+    /* min-height: 308px; */
   }
 
   .text-input {
@@ -323,8 +323,8 @@
     padding: 16px 14px;
   }
 
-  .text-input:hover{
-    border-color: #7A3145;
+  .text-input:hover {
+    border-color: #7a3145;
   }
 
   .user-comment {
@@ -350,7 +350,7 @@
 
   .order-card-inner {
     width: 386px;
-    min-height: 56px;
+    /* min-height: 56px; */
   }
 
   .inner-desc {
